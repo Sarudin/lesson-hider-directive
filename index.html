@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="directivePractice">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson Hider Directive Project</title>
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <ul>
+      <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+    <script src="./app.js" charset="utf-8"></script>
+    <script src="./lessonCtrl.js" charset="utf-8"></script>
+    <script src="./lessonHider.js" charset="utf-8"></script>
+    <script src="./lessonService.js" charset="utf-8"></script>
+  </body>
+</html>
